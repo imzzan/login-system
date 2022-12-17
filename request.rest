@@ -1,0 +1,33 @@
+GET http://localhost:3001/users
+Authorization: Bearer
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJuYW1lIjoiTXVoYW1hZCBNdXphbmkiLCJlbWFpbCI6Im11emFuaUBnbWFpbC5jb20iLCJpYXQiOjE2NzA0ODQ4MzEsImV4cCI6MTY3MDQ4NDg0Nn0.3lU3Q8i7MIfILnt8O9Yx5qC-zmXgUVfFE_6Nx8VIHfk
+
+
+
+###
+POST  http://localhost:3001/users
+Content-Type: application/json
+
+{
+    "name" : "Muhamad Muzani",
+    "email" : "muzani@gmail.com",
+    "password" : "12345678",
+    "confPassword" : "12345678"
+}
+
+###
+POST  http://localhost:3001/login
+Content-Type: application/json
+
+{
+    "email" : "muzani@gmail.com",
+    "password" : "12345678"
+}
+
+
+###
+GET http://localhost:3001/token
+
+
+###
+DELETE http://localhost:3001/logout
